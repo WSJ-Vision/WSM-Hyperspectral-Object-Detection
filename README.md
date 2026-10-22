@@ -13,13 +13,19 @@ representation while keeping the downstream detector interface unchanged.
 - A minimal mapper smoke test.
 - Public result summaries used in the manuscript.
 
-## Not Included
+## Data Availability and Repository Scope
 
-This repository intentionally does not redistribute raw data, annotations,
-checkpoints, prediction files, server logs, private paths, or credentials.
-HOD3K, HOD1, and SZU_CAR must be obtained from their respective providers and
-used according to their licenses. Update the placeholder dataset paths in the
-configuration templates before training.
+This repository provides the implementation, configuration templates, and
+public result summaries needed to inspect the WSM method. It does not
+redistribute raw images, annotations, trained checkpoints, prediction files,
+server logs, private filesystem paths, or access credentials.
+
+HOD3K, HOD1, and SZU_CAR remain subject to the terms of their respective
+releases. Users should obtain each dataset from its official distribution
+channel and comply with the applicable license, access conditions, and citation
+requirements. Before running a training job, set the local dataset locations in
+the configuration templates and verify that the selected split and
+preprocessing settings match the intended experimental protocol.
 
 ## Installation
 
