@@ -1,0 +1,9 @@
+dataset_root: /path/to/HOD1
+bands: 96
+input_size: 640
+normalization:
+  kind: uint8_divide
+  divisor: 255
+fixed3_indices: [0, 47, 95]
+methods: [Fixed3, PCA3, Conv1x1, NNP, WSM]
+seeds: [0, 1, 2]

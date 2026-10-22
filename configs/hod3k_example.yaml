@@ -1,0 +1,9 @@
+dataset_root: /path/to/HOD3K
+bands: 16
+input_size: 640
+normalization:
+  kind: clip_divide
+  tau: 384
+fixed3_indices: [0, 7, 15]
+methods: [Fixed3, PCA3, Conv1x1, NNP, WSM]
+seeds: [0, 1, 2, 3, 4]

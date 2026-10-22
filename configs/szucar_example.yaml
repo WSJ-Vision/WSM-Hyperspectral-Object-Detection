@@ -1,0 +1,14 @@
+dataset_root: /path/to/SZU_CAR
+bands: 112
+input_size: 640
+split:
+  train_images: 417
+  validation_evaluation_images: 188
+normalization:
+  kind: uint8_divide
+  divisor: 255
+fixed3_indices: [0, 55, 111]
+pca3:
+  fit_split: train_only
+methods: [Fixed3, PCA3, Conv1x1, NNP, WSM]
+seeds: [0, 1, 2]
